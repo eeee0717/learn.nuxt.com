@@ -1,17 +1,16 @@
-<script setup >
-import '@unocss/reset/tailwind.css';
-
+<script setup>
+import '@unocss/reset/tailwind.css'
 </script>
 
 <template>
   <div>
-    <slot/>
+    <slot />
   </div>
 </template>
 
 <template>
   <NuxtLayout>
-    <NuxtPage/>
+    <NuxtPage />
   </NuxtLayout>
 </template>
 
