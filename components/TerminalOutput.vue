@@ -8,22 +8,23 @@ const props = defineProps<{
 const root = ref<HTMLDivElement>()
 const terminal = new Terminal()
 
-// const stream = new WritableStream({
-//   write(chunk) {
-//     terminal.write(chunk)
-//   },
-// })
-
 watch(
   () => props.stream,
   (s) => {
-    s?.getReader().read().then(({ done, value }) => {
-      if (done)
-        return
-      terminal.write(value)
-    })
+    if (!s)
+      return
+    const reader = s.getReader()
+    function read() {
+      reader.read().then(({ done, value }) => {
+        terminal.write(value)
+        if (!done)
+          read()
+      })
+    }
+    read()
   },
   {
+    flush: 'sync',
     immediate: true,
   },
 )
