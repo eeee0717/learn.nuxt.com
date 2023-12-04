@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@webcontainer/api':
+    specifier: ^1.1.8
+    version: registry.npmmirror.com/@webcontainer/api@1.1.8
+
 devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.2.1
@@ -44,6 +49,9 @@ devDependencies:
   vue-router:
     specifier: ^4.2.5
     version: 4.2.5(vue@3.3.9)
+  xterm:
+    specifier: ^5.3.0
+    version: registry.npmmirror.com/xterm@5.3.0
 
 packages:
 
@@ -8934,6 +8942,12 @@ packages:
       '@xtuc/long': registry.npmmirror.com/@xtuc/long@4.2.2
     dev: true
 
+  registry.npmmirror.com/@webcontainer/api@1.1.8:
+    resolution: {integrity: sha512-m9WRj38oCoFPrqZOTeJcncPjnZ00FZUMq9YHEXxdhAoYhhQ69Rz4qK5p444cIPaMy2j8H7HcNLcAIwMGWnpMpw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@webcontainer/api/-/api-1.1.8.tgz}
+    name: '@webcontainer/api'
+    version: 1.1.8
+    dev: false
+
   registry.npmmirror.com/@xtuc/ieee754@1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz}
     name: '@xtuc/ieee754'
@@ -11659,6 +11673,12 @@ packages:
     name: xml-name-validator
     version: 4.0.0
     engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/xterm@5.3.0:
+    resolution: {integrity: sha512-8QqjlekLUFTrU6x7xck1MsPzPA571K5zNqWm0M0oroYEWVOptZ0+ubQSkQ3uxIEhcIHRujJy6emDWX4A7qyFzg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/xterm/-/xterm-5.3.0.tgz}
+    name: xterm
+    version: 5.3.0
     dev: true
 
   registry.npmmirror.com/y18n@5.0.8:
